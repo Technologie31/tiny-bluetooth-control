@@ -1,0 +1,32 @@
+{
+    "name": "TINY-Bluetooth Control",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "Tinybit": "github:lzty634158/tiny-bit#ca33836a88f481b2dbed1c365561d976c5d2079d",
+        "bluetooth": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0
+                }
+            }
+        }
+    }
+}
